@@ -2,9 +2,10 @@
 #define MAX 6
 
 main() {
-    int vetor[MAX] = {12, 6, 8, 10, 9, 11};
+    int vetor[MAX] = {12, 9, 11, 10, 6, 8};
     int i, j, min, aux;
 
+    
     for(i=0;i<MAX-1;i++) {
         min = i;
         for(j=i+1;j<MAX;j++) {
