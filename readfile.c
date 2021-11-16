@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define MAX 5000
 
-void ler(allValues[5000]) {
+void ler(int allValues[5000]) {
     FILE *f;
     int value, i = 0;
 
