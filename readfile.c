@@ -1,9 +1,9 @@
 #include<stdio.h>
+#define MAX 5000
 
-void ler() {
+void ler(allValues[5000]) {
     FILE *f;
     int value, i = 0;
-    int allValues[5000];
 
     f = fopen("numeros.txt", "r");
     if(f!=NULL) {
@@ -11,7 +11,7 @@ void ler() {
             fscanf(f, "%d", &value);
             
             allValues[i] = value;
-            i++
+            i++;
         }
         fclose(f);
     } else{
@@ -20,7 +20,13 @@ void ler() {
 }
 
 main() {
+    int allValues[MAX];
 
-    ler();
+    
+    ler(allValues);
+
+    for(int i=0; i<MAX; i++) {
+        printf("Numero: %d\n", allValues[i]);
+    }
 
 }
